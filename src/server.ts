@@ -1,4 +1,4 @@
-import express from "express"
+import express, {Request, Response} from "express"
 
 class Server
 {
@@ -8,11 +8,20 @@ class Server
     constructor()
     {
         this.app = express();
+
+        this.router();
     }
 
     public getInstance()
     {
         return this.app;
+    }
+
+    private router()
+    {
+        this.app.get('/', (request:Request, response:Response)=>{
+            response.send("hey node, hello");
+        });
     }
 }
 
