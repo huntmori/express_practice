@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/huntmori/express_practice#readme",
   "dependencies": {
+    "@overnightjs/core": "^1.7.4",
+    "@overnightjs/logger": "^1.1.12",
+    "body-parser": "^1.19.0",
     "express-mvc-ts": "^0.5.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
